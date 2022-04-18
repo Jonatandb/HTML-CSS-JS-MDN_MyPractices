@@ -1,0 +1,45 @@
+/* Mis practicas del curso de CSS de MDN: https://developer.mozilla.org/es/docs/Learn/CSS/First_steps*/
+h1 {
+  color: red;
+}
+
+p,
+li {
+  color: green;
+}
+
+li {
+  list-style-type: square;
+}
+
+li.especial,
+span.especial {
+  color: orange;
+  font-weight: bold;
+}
+
+li em {
+  color: chartreuse
+}
+
+h1+p {
+  font-size: 200%;
+}
+
+p span {
+  color: red
+}
+
+body {
+  background-color: #1f1c1c;
+}
+
+a {
+  color: cyan
+}
+
+body h1+p .especial {
+  color: yellow;
+  background-color: black;
+  padding: 5px
+}

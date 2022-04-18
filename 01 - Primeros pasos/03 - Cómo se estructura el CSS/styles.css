@@ -1,0 +1,73 @@
+body {
+  background-color: rgb(36, 39, 142);
+  color: rgb(212, 102, 102);
+}
+
+h1 {
+  color: fuchsia
+}
+
+.especial {
+  color: red
+}
+
+p {
+  color: blue;
+}
+
+.externo {
+  background-color: cornflowerblue;
+  width: 500px;
+}
+
+.interno {
+  background-color: lightblue;
+  width: calc(90% - 200px);
+}
+
+.caja {
+  margin: 30px;
+  background-color: rebeccapurple;
+  transform: rotate(0.8turn);
+  border: 1px solid rgb(0, 255, 174);
+  width: fit-content;
+}
+
+/* Estilos a ser aplicados cuando la pantalla tenga MENOS de 600 px de ancho */
+@media (max-width: 600px) {
+
+  body {
+    background-color: black;
+    font: 1em/150% Helvética, Arial, sans-serif;
+
+  }
+
+  .caja {
+    transform: rotate(0.2turn);
+    width: 120px;
+    height: 120px;
+    content: url('face02.png');
+  }
+
+  .externo {
+    width: 100%;
+    text-align: center;
+  }
+
+  .externo p {
+    color: yellow;
+    font-weight: bold;
+    font-size: 30px;
+    border: 1px solid green;
+  }
+
+  .interno {
+    width: 100%;
+  }
+
+  .interno p {
+    color: green;
+    font-weight: normal;
+    font-size: 20px;
+  }
+}

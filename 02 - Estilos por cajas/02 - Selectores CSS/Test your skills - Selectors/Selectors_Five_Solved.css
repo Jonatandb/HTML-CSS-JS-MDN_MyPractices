@@ -1,0 +1,31 @@
+a {
+  border: 5px solid grey;
+  padding: 10px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 20px;
+  padding: 10px;
+}
+
+
+/* Target the element with a title attribute and make the border pink (border-color: pink). */
+a[title] {
+  border-color: pink;
+}
+
+/* Target the element with an href attribute that contains the word contact somewhere in its value and make the border orange (border-color: orange). */
+a[href*="contact"] {
+  border-color: orange;
+}
+
+/* Target the element with an href value starting with https and give it a green border (border-color: green).*/
+a[href^="https"] {
+  border-color: green;
+}
